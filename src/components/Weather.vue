@@ -60,7 +60,7 @@ const getWeatherData = async () => {
       console.log(result);
       const data = result.result;
       weatherData.adCode = {
-        city: data.city.City || "未知地区",
+        Province: data.city.City || "未知地区",
         // adcode: data.city.cityId,
       };
       weatherData.weather = {

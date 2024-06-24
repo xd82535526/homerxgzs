@@ -27,7 +27,7 @@ const mainKey = import.meta.env.VITE_WEATHER_KEY;
 // 天气数据
 const weatherData = reactive({
   adCode: {
-    Province: null, // 城市
+    City: null, // 城市
     adcode: null, // 城市编码
   },
   weather: {
@@ -60,7 +60,7 @@ const getWeatherData = async () => {
       console.log(result);
       const data = result.result;
       weatherData.adCode = {
-        City: data.city.Province || "未知地区",
+        City: data.city.City || "未知地区",
         // adcode: data.city.cityId,
       };
       weatherData.weather = {
@@ -71,7 +71,7 @@ const getWeatherData = async () => {
       };
     } else {
       // 获取 Adcode
-      const adCode = await getAdcode(mainKey);
+      const adCode = await getAdcode(mainKey);Province
       console.log(adCode);
       if (adCode.infocode !== "10000") {
         throw "地区查询失败";

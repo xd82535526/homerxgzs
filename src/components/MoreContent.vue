@@ -1,5 +1,5 @@
 <template>
-  <div class="more-content">您可在此编写任意内容</div>
+  <div class="more-content"><script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/KVL6zT7A3Nr7ekjl/quote.js?theme=3&col=true&f=12"></script></div>
 </template>
 
 <style lang="scss" scoped>
